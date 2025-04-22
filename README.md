@@ -89,6 +89,20 @@ npm run lint
 - ESLint
 - PostCSS
 
+## Environment Variables
+
+This project requires an OpenWeather API key to function properly. To securely provide your API key, follow these steps:
+
+1. Rename the `.env.example` file to `.env` in the root of the project.
+
+2. Replace the placeholder value with your actual OpenWeather API key:
+
+   ```
+   VITE_OPENWEATHER_API_KEY=your_actual_api_key_here
+   ```
+
+3. Restart the development server if it is running to apply the environment variable.
+
 ## License
 
 This project is private and not licensed for public use.
