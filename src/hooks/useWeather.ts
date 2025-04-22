@@ -2,9 +2,9 @@
 import { useState, useCallback } from "react";
 
 /**
- * OpenWeatherMap API key. (Move to env if deploying securely.)
+ * OpenWeatherMap API key from environment variable.
  */
-const OPENWEATHER_API_KEY = "d185864f9a52b05b436e1a73edfc12fc"; // Replace with env integration if using secrets
+const OPENWEATHER_API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
 export type WeatherUnits = "metric" | "imperial";
 
